@@ -1,0 +1,79 @@
+body {
+    background: white;
+    color: black;
+    background: url(../img/mine4.jpg) no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    background-color: blue;
+    color: silver;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.control {
+    position: relative;
+    margin: auto;
+    width: 15%;
+    background-color: rgb(197, 192, 192);
+    height: 30px;
+    margin-bottom: 3px;
+    border: black solid;
+    color: red;
+    font-weight: bold;
+}
+
+.restart {
+    position: absolute;
+    margin: auto;
+    margin-top: 2px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.timer {
+    position: absolute;
+    font-size: 20px;
+    right: 5px;
+    top: 3px;
+}
+
+.mines {
+    position: absolute;
+    font-size: 20px;
+    left: 5px;
+    top: 3px;
+}
+
+.board {
+    border: black solid;
+    margin: auto;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background: silver;
+    color: red;
+    border: black solid;
+
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+.levels {
+    text-align: center;
+    background-color: lightsteelblue;
+    border: 3px solid black;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}

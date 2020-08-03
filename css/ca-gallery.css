@@ -87,7 +87,7 @@ body {
     background: red;
     width: 80vw;
     right: -80vw;
-    z-index: 10;
+    z-index: 5;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,24 @@
+body {
+    background-color: lightskyblue;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.todo-txt {
+    padding: 10px 20px;
+}
+
+.todo-txt:focus {
+    background-color: lightsalmon;
+    transition: 0.3s;
+}
+
+.todo-stat {
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 10px;
+}
+.todo-importance{
+width: 85px;}

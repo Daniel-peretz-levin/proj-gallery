@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+    background-color: lightskyblue;
+    padding: 5px;
+}
+
+.books-container{
+width: 100vh;
+}
+.table {
+    box-sizing: border-box;
+    margin: 2em auto;
+    display: flex;
+}
+.cell {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.book-details {
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    padding: 30px;
+    border: 10px;
+}
+
+.container-book-details h2 {
+    font-size: 20px;
+}
+
+.container-book-details {
+    width: 70%;
+    height: 65vh;
+    background-color: rgb(112, 240, 212);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.img {
+    height: 150px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.exit-modal {
+    position: relative;
+    float: right;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+.count-rating{
+    width: 75px;
+}
+
+.read{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    border: outset;
+}
+.update{
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border: outset;
+}
+.delete{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border: outset;
+}
+.add-book{
+    background-color: rgb(16, 202, 16);
+    color: white;
+    padding: 5px;
+    border: outset;
+}

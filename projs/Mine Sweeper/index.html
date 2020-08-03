@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<h1>Mine Sweeper</h1>
+<div class="levels">
+    <h4>Chose your level:</h4>
+    <input checked="true" onclick="initGame()" type="radio" name="size" value="4">
+    <label for="16">Easy</label>
+    <input onclick="initGame()" type="radio" name="size" value="8">
+    <label for="64">Medium</label>
+    <input onclick="initGame()" type="radio" name="size" value="12">
+    <label for="144">Hard</label>
+</div>
+
+<div class="control">
+    <span class="mines">00</span>
+    <button class="restart" onclick="restartGame(this)">😛</button>
+    <span class="timer">000</span>
+
+</div>
+
+<body onload="initGame()">
+    <table class="board">
+        <tbody class="table">
+        </tbody>
+    </table>
+
+
+
+    <script src="js/game.js"></script>
+</body>
+
+</html>
