@@ -35,20 +35,26 @@ var proj= getProj(id);
 console.log('proj', proj, 'id', proj.id);
 var strHTML=`
     <h2>${proj.name}</h2>
-    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-    <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+    <img class="img-fluid d-block mx-auto" src="img/portfolio/${proj.name}.jpg" alt="">
     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis
       dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
       maiores repudiandae, nostrum, reiciendis facere nemo!</p>
     <ul class="list-inline">
-      <li>Date: January 2017</li>
-      <li>Client: Threads</li>
-      <li>Category: Illustration</li>
+      <li>Date: ${proj.publishedAt}</li>
+      <li><button onclick="window.open('${proj.url}')">Open Project</button></li>
     </ul>
     <button class="btn btn-primary" data-dismiss="modal" type="button">
         <i class="fa fa-times"></i>
         Close Project</button>`
 $('.modal-body').html(strHTML);
+}
+
+function sendEmail(){
+    var elSubject= document.querySelector('.subject');
+    var subject= elSubject.value;
+    var elMessage= document.querySelector('.message-body');
+    var message= elMessage.value;
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=daniel28049@gmail.com&su=${subject}&body=${message}`)
 }
 
 
